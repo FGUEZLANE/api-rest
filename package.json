@@ -6,7 +6,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "newman run tests/Cars_API.postman_collection.json --reporters cli,junit --reporter-junit-export newman.xml --insecure"
+    "test": "newman run Cars_API.postman_collection.json --reporters cli,junit --reporter-junit-export newman.xml --insecure"
   },
   "author": "",
   "license": "ISC",
