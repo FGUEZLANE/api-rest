@@ -6,11 +6,20 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "newman run Cars_API.postman_collection.json --reporters cli,junit --reporter-junit-export newman.xml --insecure"
+    "api-test-devm": "newman run tests/Newman/Ficot.postman_collection.json -e tests/Newman/env/ficot_dev.postman_environment.json -r htmlextra,cli,junit,html --reporter-html-export newman/report.html --reporter-junit-export newman/report.xml --reporter-htmlextra-export newman/newman.html --reporter-htmlextra-darkTheme"
   },
-  "author": "",
+  "author": "I211400",
   "license": "ISC",
   "dependencies": {
     "newman": "^5.2.4"
-  }
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FGUEZLANE/api-rest.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FGUEZLANE/api-rest/issues"
+  },
+  "homepage": "https://github.com/FGUEZLANE/api-rest#readme"
 }
