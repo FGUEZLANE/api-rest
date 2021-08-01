@@ -1,0 +1,16 @@
+{
+  "name": "api-rest",
+  "version": "1.0.0",
+  "description": "postman test",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "newman run Cars_API.postman_collection.json --reporters cli,junit --reporter-junit-export newman.xml --insecure"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "newman": "^5.2.4"
+  }
+}
