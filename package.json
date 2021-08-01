@@ -6,7 +6,7 @@
     "test": "tests"
   },
   "scripts": {
-    "api-test-devm": "newman run tests/Newman/Ficot.postman_collection.json -e tests/Newman/env/ficot_dev.postman_environment.json --reporters htmlextra,cli,junit,html --reporter-html-export report.html --reporter-junit-export report.xml --reporter-htmlextra-export newman.html --reporter-htmlextra-darkTheme"
+    "api-test-devm": "newman run tests/Newman/Ficot.postman_collection.json -e tests/Newman/env/ficot_dev.postman_environment.json --reporters htmlextra,cli,junit,html --reporter-html-export tests/Newman/report/report.html --reporter-junit-export report.xml --reporter-htmlextra-export tests/Newman/report/newman.html --reporter-htmlextra-darkTheme"
   },
   "author": "I211400",
   "license": "ISC",
